@@ -1,0 +1,1 @@
+(async function(){try{const r=await fetch('/api/propiedades');if(r.ok){propiedades=await r.json();const extra=[...new Set(propiedades.map(p=>p.zona).filter(Boolean))];ZONAS.splice(0,ZONAS.length,...extra);}}catch(e){console.warn('Modo vista previa: catálogo de ejemplo',e);}const s=document.createElement('script');s.src='js/script.js';document.body.appendChild(s);})();

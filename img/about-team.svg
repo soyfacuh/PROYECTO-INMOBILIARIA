@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" fill="none">
+<rect width="900" height="1100" rx="48" fill="#F5F1E8"/>
+<circle cx="170" cy="170" r="96" fill="#E9F0E7"/>
+<circle cx="740" cy="216" r="72" fill="#F0DFC1"/>
+<rect x="84" y="214" width="732" height="736" rx="42" fill="#FFFDF8" stroke="#E5E1D5"/>
+<text x="118" y="314" font-family="Arial, sans-serif" font-size="28" letter-spacing="5" fill="#7D8D84">VERDE CASA</text>
+<text x="118" y="380" font-family="Georgia, 'Times New Roman', serif" font-size="62" fill="#274A3B">Tu inmobiliaria de confianza</text>
+<text x="118" y="460" font-family="Arial, sans-serif" font-size="26" fill="#6D756F">Propiedades, alquileres y ventas en una experiencia moderna y simple.</text>
+<rect x="118" y="530" width="564" height="200" rx="28" fill="#EAF1E8"/>
+<path d="M182 666V592l80-58 80 58v74" stroke="#6D8E77" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M226 666v-58h72v58" stroke="#6D8E77" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="392" y="576" width="236" height="26" rx="13" fill="#CFB07C"/>
+<rect x="392" y="620" width="184" height="22" rx="11" fill="#90AA94"/>
+<rect x="392" y="658" width="205" height="22" rx="11" fill="#D8E5D8"/>
+<rect x="118" y="772" width="664" height="100" rx="26" fill="#F8F4EC" stroke="#E6E0D0"/>
+<text x="148" y="830" font-family="Arial, sans-serif" font-size="28" fill="#3A5146">Atención personalizada • Publicaciones premium • Gestión ágil</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="88" viewBox="0 0 320 88" fill="none">
+  <rect width="320" height="88" rx="24" fill="#F9F6EF"/>
+  <path d="M34 58V36.2L52 23l18 13.2V58" stroke="#678B74" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M44 58V46h16v12" stroke="#678B74" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M25 60h54" stroke="#D2B685" stroke-width="4.2" stroke-linecap="round"/>
+  <text x="94" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#214B3A">Verde Casa</text>
+  <text x="96" y="62" font-family="Arial, sans-serif" font-size="10" letter-spacing="3" fill="#7B8C83">INMOBILIARIA DE DEMOSTRACIÓN</text>
+</svg>

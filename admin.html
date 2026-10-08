@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Panel demo | Verde Casa</title>
+  <meta name="theme-color" content="#f6f1e7">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <header>
+    <a href="/" class="brand" aria-label="Volver al sitio de Verde Casa">
+      <span class="brand-mark">⌂</span>
+      <span>Verde Casa <small>Panel inmobiliario demo</small></span>
+    </a>
+    <div class="header-actions">
+      <a class="soyfacuh-link" href="https://soyfacuh.com" target="_blank" rel="noopener noreferrer">Hecho por Soyfacuh.com ↗</a>
+      <span id="who"></span>
+      <button id="logout" hidden>Salir</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="auth" class="auth card">
+      <div class="auth-badge">Acceso de demostración</div>
+      <h1 id="authTitle">Ingresar al panel</h1>
+      <p id="authHint">Probá una versión demo del panel administrativo de Verde Casa.</p>
+      <form id="authForm">
+        <label>Nombre <input name="nombre" id="authName" placeholder="Tu nombre"></label>
+        <label>Usuario <input name="email" required placeholder="admin" autocomplete="username"></label>
+        <label>Contraseña <input name="password" type="password" required placeholder="soyfacuh" autocomplete="current-password"></label>
+        <button class="primary">Ingresar</button>
+      </form>
+      <div class="auth-footer">
+        <p class="demo-credentials">Acceso demo: <strong>admin</strong> / <strong>soyfacuh</strong></p>
+        <p class="demo-warning">Versión de prueba · No usar estas credenciales en producción.</p>
+      </div>
+    </div>
+
+    <div id="panel" hidden>
+      <section class="demo-banner card">
+        <div>
+          <span class="eyebrow">Versión demo</span>
+          <h1>Panel administrativo de muestra</h1>
+          <p>Podés recorrer la interfaz, ver propiedades, consultas y equipo. Las acciones de crear, editar o eliminar están deshabilitadas porque esta es una demostración comercial.</p>
+        </div>
+        <div class="demo-banner__actions">
+          <button class="primary" id="add">+ Nueva propiedad</button>
+          <a class="ghost-link" href="https://soyfacuh.com" target="_blank" rel="noopener noreferrer">Solicitar versión real ↗</a>
+        </div>
+      </section>
+
+      <section class="mini-grid" id="miniGrid">
+        <article class="card mini-card">
+          <span class="mini-icon">👁</span>
+          <div>
+            <strong>Solo lectura</strong>
+            <p>Ideal para presentar el sistema sin tocar datos reales.</p>
+          </div>
+        </article>
+        <article class="card mini-card">
+          <span class="mini-icon">🏘</span>
+          <div>
+            <strong>Inventario visible</strong>
+            <p>Visualización de inmuebles, estados y filtros.</p>
+          </div>
+        </article>
+        <article class="card mini-card">
+          <span class="mini-icon">📩</span>
+          <div>
+            <strong>Consultas demo</strong>
+            <p>Ejemplos de leads y mensajes de potenciales clientes.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="stats" id="stats"></section>
+
+      <section class="workspace">
+        <aside class="workspace-side card">
+          <span class="eyebrow">Estado del proyecto</span>
+          <h2>Demo profesional para mostrar al cliente</h2>
+          <ul class="project-checks">
+            <li>Ingreso con credenciales de prueba</li>
+            <li>Panel optimizado para desktop y mobile</li>
+            <li>Acciones sensibles bloqueadas</li>
+            <li>Branding y desarrollo por Soyfacuh.com</li>
+          </ul>
+          <div class="side-note">
+            <strong>Importante</strong>
+            <p>Si el cliente aprueba el prototipo, se puede transformar en una versión real con edición, carga de inmuebles y gestión de usuarios.</p>
+          </div>
+        </aside>
+
+        <div class="workspace-main">
+          <div class="tabs">
+            <button data-tab="properties" class="selected">Propiedades</button>
+            <button data-tab="leads">Consultas</button>
+            <button data-tab="team">Equipo</button>
+          </div>
+
+          <section id="properties">
+            <div class="toolbar card toolbar-card">
+              <input id="search" placeholder="Buscar inmueble, barrio o código...">
+              <select id="stateFilter">
+                <option value="">Todos los estados</option>
+                <option>publicada</option>
+                <option>borrador</option>
+                <option>reservada</option>
+                <option>vendida</option>
+                <option>alquilada</option>
+              </select>
+              <button id="demoAction" class="soft-btn" type="button">Acciones bloqueadas</button>
+            </div>
+            <div class="tablewrap"><table><thead><tr><th>Propiedad</th><th>Operación</th><th>Precio</th><th>Estado</th><th>Vista</th></tr></thead><tbody id="rows"></tbody></table></div>
+          </section>
+
+          <section id="leads" hidden>
+            <div class="section-intro">
+              <h2>Consultas recibidas</h2>
+              <p>Vista de ejemplo para mostrar cómo se visualizarían los contactos entrantes.</p>
+            </div>
+            <div class="tablewrap"><table><thead><tr><th>Fecha</th><th>Contacto</th><th>Presupuesto</th><th>Mensaje</th></tr></thead><tbody id="leadRows"></tbody></table></div>
+          </section>
+
+          <section id="team" hidden>
+            <div class="section-intro">
+              <h2>Administradores</h2>
+              <p>Ejemplo de cómo se verían los usuarios del sistema. La creación de usuarios está deshabilitada en esta demo.</p>
+            </div>
+            <div id="users" class="team-grid"></div>
+            <form id="teamForm" class="card locked-card">
+              <h3>Invitar un editor</h3>
+              <p>Esta función se encuentra deshabilitada en la versión demo.</p>
+              <div class="three">
+                <label>Nombre<input name="nombre" required placeholder="Nombre del editor" disabled></label>
+                <label>Correo<input name="email" type="email" required placeholder="editor@correo.com" disabled></label>
+                <label>Contraseña inicial<input name="password" type="password" minlength="12" required placeholder="************" disabled></label>
+              </div>
+              <button class="primary" type="button" id="createUserDemo">Crear usuario</button>
+            </form>
+          </section>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="editor">
+    <div class="editorForm readonly-sheet">
+      <header class="dialoghead">
+        <div>
+          <span class="eyebrow">Ficha de propiedad</span>
+          <h2 id="editTitle">Detalle</h2>
+        </div>
+        <button type="button" id="close">✕</button>
+      </header>
+      <div class="formbody" id="previewBody"></div>
+      <footer>
+        <button type="button" id="cancel">Cerrar</button>
+        <button class="primary" type="button" id="save">Solicitar versión completa</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <div id="notice" role="status"></div>
+  <script src="js/admin.js"></script>
+</body>
+</html>

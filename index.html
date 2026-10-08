@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f3efe6" />
+  <title>Verde Casa · Propiedades Premium en Argentina</title>
+  <meta name="description" content="Verde Casa — Inmobiliaria boutique premium. Compra, venta, alquiler y tasación de propiedades exclusivas en Buenos Aires y Argentina." />
+  <meta name="keywords" content="inmobiliaria, propiedades premium, casas, departamentos, alquiler, venta, Buenos Aires, Nordelta, Palermo, Recoleta" />
+  <meta name="author" content="Verde Casa" />
+  <link rel="canonical" href="https://verdecasarealty.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Verde Casa" />
+  <meta property="og:title" content="Verde Casa · Propiedades Premium" />
+  <meta property="og:description" content="Selección curada de propiedades premium. Compra, venta y alquiler con asesoramiento personalizado." />
+  <meta property="og:image" content="img/hero-light.svg" />
+  <meta property="og:locale" content="es_AR" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Verde Casa · Propiedades Premium" />
+  <meta name="twitter:description" content="Selección curada de propiedades premium." />
+  <meta name="twitter:image" content="img/hero-light.svg" />
+
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- JSON-LD RealEstateAgent -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Verde Casa",
+    "url": "https://verdecasarealty.com/",
+    "logo": "https://verdecasarealty.com/img/logo.svg",
+    "image": "https://verdecasarealty.com/img/hero-light.svg",
+    "telephone": "11-1111-1111",
+    "email": "contacto@verdecasa.test",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Siempre Verde 123 (dirección de ejemplo)",
+      "addressLocality": "CABA",
+      "addressCountry": "AR"
+    },
+    "areaServed": "AR",
+    "sameAs": [
+      "https://www.instagram.com/verdecasarealty",
+      "https://www.facebook.com/verdecasarealty"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip link accesibilidad -->
+  <a href="#propiedades" class="skip-link">Saltar al contenido</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand" aria-label="Verde Casa · Inicio">
+        <img src="img/logo.svg" alt="Verde Casa" class="brand-logo" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'brand-text',textContent:'Verde Casa'}))" />
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#propiedades">Propiedades</a>
+        <a href="#propiedades" data-op="Venta">Comprar</a>
+        <a href="#propiedades" data-op="Alquiler">Alquilar</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <button class="icon-btn" id="btnFavs" aria-label="Ver favoritos" title="Favoritos">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-7-10a4.5 4.5 0 0 1 8-2.83A4.5 4.5 0 0 1 19 11c0 5.65-7 10-7 10Z"/></svg>
+          <span class="fav-count" id="favCount">0</span>
+        </button>
+        <button class="icon-btn" id="btnTheme" aria-label="Cambiar tema" title="Cambiar tema">
+          <svg class="ico-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="ico-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z"/></svg>
+        </button>
+        <a href="admin.html" class="btn btn-primary btn-cta">Administración</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg" style="background-image:url('img/hero-light.svg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow reveal">Propiedades excepcionales · Argentina</p>
+      <h1 class="reveal">Encontrá el lugar<br/><em>que se siente hogar</em></h1>
+      <p class="hero-sub reveal">Selección curada de propiedades premium en las mejores zonas. Asesoramiento personalizado y experiencia sin fricciones.</p>
+      <div class="hero-actions reveal">
+        <a href="#propiedades" class="btn btn-primary">Explorar propiedades</a>
+        <a href="#contacto" class="btn btn-ghost">Hablar con un asesor</a>
+      </div>
+
+      <!-- Buscador -->
+      <form class="search-box reveal" id="searchBox" onsubmit="return false;" role="search" aria-label="Buscar propiedades">
+        <div class="search-field">
+          <label for="fOperacion">Operación</label>
+          <select id="fOperacion">
+            <option value="">Todas</option>
+            <option value="Venta">Comprar</option>
+            <option value="Alquiler">Alquilar</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label for="fTipo">Tipo</label>
+          <select id="fTipo"><option value="">Todos</option></select>
+        </div>
+        <div class="search-field">
+          <label for="fZona">Zona</label>
+          <select id="fZona"><option value="">Todas</option></select>
+        </div>
+        <div class="search-field">
+          <label for="fTexto">Buscar</label>
+          <input type="text" id="fTexto" placeholder="Título, barrio, dirección…" />
+        </div>
+        <button type="button" class="btn btn-primary btn-search" id="btnBuscar">Buscar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ PROPIEDADES ============ -->
+  <section class="section" id="propiedades">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Portafolio</p>
+          <h2>Propiedades destacadas</h2>
+        </div>
+        <div class="filters-toolbar">
+          <div class="filter-inline">
+            <label for="fMin">Precio mín.</label>
+            <input type="number" id="fMin" placeholder="USD" min="0" />
+          </div>
+          <div class="filter-inline">
+            <label for="fMax">Precio máx.</label>
+            <input type="number" id="fMax" placeholder="USD" min="0" />
+          </div>
+          <div class="filter-inline">
+            <label for="fOrden">Ordenar</label>
+            <select id="fOrden">
+              <option value="destacadas">Destacadas</option>
+              <option value="recientes">Más recientes</option>
+              <option value="menor">Menor precio</option>
+              <option value="mayor">Mayor precio</option>
+            </select>
+          </div>
+          <div class="filter-inline filter-toggle">
+            <label>&nbsp;</label>
+            <label class="switch"><input type="checkbox" id="fSoloFavs"/> <span>Solo favoritos</span></label>
+          </div>
+          <button class="btn btn-outline" id="btnReset">Limpiar</button>
+        </div>
+      </div>
+
+      <p class="results-count" id="resultsCount"></p>
+      <div class="grid grid-cards" id="propiedadesGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <p>No encontramos propiedades con esos filtros.</p>
+        <button class="btn btn-outline" onclick="document.getElementById('btnReset').click()">Reiniciar filtros</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="section section-alt" id="servicios">
+    <div class="container">
+      <div class="section-head center">
+        <div>
+          <p class="eyebrow">Servicios</p>
+          <h2>Todo lo que necesitás, bajo un mismo techo</h2>
+        </div>
+      </div>
+      <div class="grid grid-services">
+        <article class="service-card"><div class="service-icon">🏡</div><h3>Compra</h3><p>Acompañamiento completo para encontrar la propiedad ideal.</p></article>
+        <article class="service-card"><div class="service-icon">🔑</div><h3>Venta</h3><p>Comercialización estratégica con marketing premium.</p></article>
+        <article class="service-card"><div class="service-icon">📄</div><h3>Alquiler</h3><p>Gestión integral, contratos y garantías simplificadas.</p></article>
+        <article class="service-card"><div class="service-icon">📊</div><h3>Tasaciones</h3><p>Valuaciones certificadas basadas en mercado real.</p></article>
+        <article class="service-card"><div class="service-icon">💼</div><h3>Inversiones</h3><p>Oportunidades curadas con proyección de renta.</p></article>
+        <article class="service-card"><div class="service-icon">🧭</div><h3>Administración</h3><p>Gestión profesional de alquileres y consorcios.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ESTADÍSTICAS ============ -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="grid grid-stats">
+        <div class="stat"><span class="stat-num" data-target="1240">0</span><p>Propiedades vendidas</p></div>
+        <div class="stat"><span class="stat-num" data-target="18">0</span><p>Años de experiencia</p></div>
+        <div class="stat"><span class="stat-num" data-target="98">0</span><p>% clientes satisfechos</p></div>
+        <div class="stat"><span class="stat-num" data-target="42">0</span><p>Asesores expertos</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIOS ============ -->
+  <section class="section section-alt" id="testimonios">
+    <div class="container">
+      <div class="section-head center">
+        <div>
+          <p class="eyebrow">Testimonios</p>
+          <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+      </div>
+      <div class="grid grid-testimonials">
+        <article class="testimonial-card">
+          <p>"Un proceso impecable de principio a fin. Encontramos nuestra casa en menos de un mes."</p>
+          <footer><strong>Lucía Martínez</strong><span>Compradora · Palermo</span></footer>
+        </article>
+        <article class="testimonial-card">
+          <p>"Profesionalismo y trato humano. Vendieron mi departamento por sobre lo esperado."</p>
+          <footer><strong>Andrés Gómez</strong><span>Vendedor · Recoleta</span></footer>
+        </article>
+        <article class="testimonial-card">
+          <p>"Los mejores asesores del mercado. Recomiendo 100%."</p>
+          <footer><strong>Sofía Ríos</strong><span>Inversora · Nordelta</span></footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NOSOTROS ============ -->
+  <section class="section" id="nosotros">
+    <div class="container about-grid">
+      <div class="about-media"><img src="img/about-team.svg" alt="Presentación ilustrada de Verde Casa" loading="lazy" /></div>
+      <div class="about-copy">
+        <p class="eyebrow">Nosotros</p>
+        <h2>Una nueva forma de vivir el mercado inmobiliario</h2>
+        <p>Somos una boutique inmobiliaria con más de una década conectando personas con propiedades excepcionales. Trabajamos con estándares internacionales, tecnología y una obsesión por el detalle.</p>
+        <ul class="check-list">
+          <li>Selección curada de propiedades premium</li>
+          <li>Asesoría legal y financiera integrada</li>
+          <li>Marketing profesional en cada operación</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary">Conocé al equipo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EQUIPO ============ -->
+  <section class="section section-alt" id="equipo">
+    <div class="container">
+      <div class="section-head center"><div><p class="eyebrow">Equipo</p><h2>Asesores dedicados</h2></div></div>
+      <div class="grid grid-team">
+        <article class="team-card"><div class="team-avatar" style="background-image:url('https://i.pravatar.cc/300?img=32')"></div><h3>Camila Torres</h3><p>Directora Comercial</p></article>
+        <article class="team-card"><div class="team-avatar" style="background-image:url('https://i.pravatar.cc/300?img=12')"></div><h3>Martín Álvarez</h3><p>Asesor Senior</p></article>
+        <article class="team-card"><div class="team-avatar" style="background-image:url('https://i.pravatar.cc/300?img=47')"></div><h3>Valentina Ruiz</h3><p>Especialista en Lujo</p></article>
+        <article class="team-card"><div class="team-avatar" style="background-image:url('https://i.pravatar.cc/300?img=15')"></div><h3>Diego Fernández</h3><p>Inversiones</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section" id="contacto">
+    <div class="container contact-grid">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2>Hablemos de tu próxima propiedad</h2>
+        <p>Contanos si buscás comprar, alquilar o invertir. También podés indicar tu presupuesto, zona y tipo de propiedad en el mensaje.</p>
+        <ul class="contact-info">
+          <li><strong>Dirección:</strong> Av. Siempre Verde 123, CABA</li>
+          <li><strong>Número:</strong> <a href="tel:+54111111111">11-1111-1111</a></li>
+          <li><strong>Correo:</strong> <a href="mailto:contacto@verdecasa.test">contacto@verdecasa.test</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/541111111111?text=Hola%20Verde%20Casa" target="_blank" rel="noopener">11-1111-1111</a></li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field"><label for="cf-nombre">Nombre</label><input id="cf-nombre" type="text" name="nombre" required autocomplete="name" placeholder="Tu nombre y apellido" /><span class="error"></span></div>
+        <div class="field"><label for="cf-email">Correo</label><input id="cf-email" type="email" name="email" required autocomplete="email" placeholder="contacto@test.com" /><span class="error"></span></div>
+        <div class="field"><label for="cf-tel">Número</label><input id="cf-tel" type="tel" name="telefono" autocomplete="tel" placeholder="11-1111-1111" /><span class="error"></span></div>
+        <div class="field"><label for="cf-msg">Mensaje</label><textarea id="cf-msg" name="mensaje" rows="5" required placeholder="Ejemplo: Busco un departamento de 2 dormitorios en alquiler, zona norte, con cochera. Presupuesto estimado: USD 1.200."></textarea><span class="error"></span></div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Enviar consulta</button>
+          <button type="button" class="btn btn-outline" id="btnWhatsapp">Enviar por WhatsApp</button>
+        </div>
+        <p class="form-success" id="formSuccess" hidden>¡Gracias! Te contactaremos a la brevedad.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <section class="showcase-note"><div class="container"><div class="showcase-note__box"><span class="showcase-note__icon">✦</span><div><span class="showcase-note__eyebrow">EXPERIENCIA DIGITAL</span><h2>Una inmobiliaria pensada para descubrir tu próximo lugar.</h2><p>Diseño y desarrollo web por <a href="https://soyfacuh.com" target="_blank" rel="noopener noreferrer">Soyfacuh.com ↗</a></p></div><a class="showcase-note__link" href="https://soyfacuh.com" target="_blank" rel="noopener noreferrer">Conocé al desarrollador ↗</a></div></div></section>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="img/logo.svg" alt="Verde Casa" class="footer-logo" />
+        <p>Inmobiliaria premium con propiedades curadas en todo el país.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul><li><a href="#inicio">Inicio</a></li><li><a href="#propiedades">Propiedades</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#contacto">Contacto</a></li></ul>
+      </div>
+      <div>
+        <h4>Operaciones</h4>
+        <ul><li><a href="#propiedades">Comprar</a></li><li><a href="#propiedades">Alquilar</a></li><li><a href="#contacto">Vender</a></li><li><a href="#contacto">Tasaciones</a></li></ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul><li>Av. Siempre Verde 123, CABA</li><li><strong>Número:</strong> <a href="tel:+54111111111">11-1111-1111</a></li><li><strong>Correo:</strong> <a href="mailto:contacto@verdecasa.test">contacto@verdecasa.test</a></li><li><strong>Instagram:</strong> @verdecasa.test</li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom container"><p>© <span id="year"></span> Verde Casa · Sitio demostrativo con propiedades y datos ficticios. <a href="https://soyfacuh.com" target="_blank" rel="noopener noreferrer">Desarrollado por Soyfacuh.com ↗</a></p></div>
+  </footer>
+
+    <!-- Botones flotantes -->
+  <a class="fab-whatsapp" href="https://wa.me/541111111111?text=Hola%20Verde%20Casa" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0 12 12 0 0 0 1.6 17.9L0 24l6.3-1.6A12 12 0 1 0 20.5 3.5ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.3-.4A9.8 9.8 0 1 1 12 21.8Zm5.4-7.3c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1s-.8 1-.9 1.2c-.2.2-.4.2-.7 0-.3-.2-1.2-.5-2.4-1.4-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.4.4-.6.1-.2 0-.4 0-.6l-1-2.2c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.4-1.1 1.1-1.1 2.7 0 1.6 1.1 3.1 1.3 3.4.2.2 2.3 3.4 5.5 4.8 1.9.8 2.7.9 3.6.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4 0-.1-.3-.2-.6-.4Z"/></svg>
+  </a>
+  <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+
+  <!-- ============ MODAL DETALLE ============ -->
+  <div class="modal" id="propModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="document">
+      <button class="modal-close" data-close aria-label="Cerrar">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Toast notificaciones -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/propiedades.js"></script>
+  <script src="js/loader.js"></script>
+<div class="demo-ribbon">DEMO · PROPIEDADES FICTICIAS <span>·</span> Diseño por <a href="https://soyfacuh.com" target="_blank" rel="noopener noreferrer">Soyfacuh.com</a></div></body>
+</html>
